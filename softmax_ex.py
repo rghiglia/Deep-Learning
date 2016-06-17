@@ -37,3 +37,7 @@ scores = np.vstack([x, np.ones_like(x), 0.2*np.ones_like(x)])
 
 plt.plot(x, softmax(0.1*scores).T, linewidth=2)
 
+a = 1000000000.0
+for i in range(1000000):
+    a = a + 0.000001
+print(a-1000000000)
